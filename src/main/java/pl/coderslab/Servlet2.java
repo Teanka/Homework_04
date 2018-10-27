@@ -21,18 +21,6 @@ public class Servlet2 extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         List<Integer> numbers = new ArrayList<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9,10));
         request.setAttribute("numbers", numbers);
-//        String begin = request.getParameter("begin");
-//        String step = request.getParameter("step");
-//        if(begin!=null&&!begin.isEmpty()&&step!=null&&!step.isEmpty()){
-//            try{
-//                int beginInt = Integer.parseInt(begin);
-//                int stepInt = Integer.parseInt(step);
-//                request.setAttribute("begin", beginInt);
-//                request.setAttribute("step", stepInt);
-//            } catch(NumberFormatException e){
-//                response.getWriter().append("begin and step should be numbers");
-//            }
-//        }
         request.getRequestDispatcher("/index2.jsp").forward(request,response);
     }
 //    W projekcie stwórz stronę jsp index2.jsp. Za pomocą pętli forEach wyświetl na stronie liczby w taki sposób by uzyskać poniższy wynik.

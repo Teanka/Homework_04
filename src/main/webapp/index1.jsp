@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Author</title>
 </head>
 <body>
 <p>Wybrany autor: ${param.author!= null ?  param.author : "brak autora"} </p>

@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: teanka
@@ -11,6 +13,13 @@
     <title>Title</title>
 </head>
 <body>
+<c:set var="someName" value="Witaj w coderslab."/>
+
+
+<c:if test="${fn:containsIgnoreCase(someName, 'coderslab')}">
+    <p>OK</p>
+</c:if>
+
 
 </body>
 </html>
