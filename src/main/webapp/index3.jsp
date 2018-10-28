@@ -16,7 +16,7 @@
 <c:set var="someName" value="Witaj w coderslab."/>
 
 
-<c:if test="${fn:containsIgnoreCase(someName, 'coderslab')}">
+<c:if test="${fn:containsIgnoreCase(value, 'coderslab')}">
     <p>OK</p>
 </c:if>
 
