@@ -12,30 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<%--&lt;%&ndash; if you want to select value from drop-downlist here is jsp code. &ndash;%&gt;--%>
-<%--<body>--%>
-<%--<form name="f1" method="get" action="#">--%>
-<%--<select name="clr">--%>
-<%--<option>Red</option>--%>
-<%--<option>Blue</option>--%>
-<%--<option>Green</option>--%>
-<%--<option>Pink</option>--%>
-<%--</select>--%>
-<%--<input type="submit" name="submit" value="Select Color"/>--%>
-<%--</form>--%>
-<%--&lt;%&ndash; To display selected value from dropdown list. &ndash;%&gt;--%>
-
-<%--</body>--%>
-<%--<%--%>
-<%--String s=request.getParameter("clr");--%>
-<%--<c: if ${lang} !=null--%>
-<%--{--%>
-<%--System.out.println("Selected Color is : "+s);--%>
-<%--}--%>
-<%--%>--%>
-
-<%--<c:out value="${cookie.language.value}" default="default value"/>--%>
-<%--<p>Wybrany ${param.language!= null ?  param.language : "cześć"} </p>--%>
 <form method="POST" action="/Servlet_01_2">
     <%--<c:out value="${language}" default="ymm"/>--%>
     ${language}<br>
@@ -51,13 +27,6 @@
     <input type="submit" value="Wybierz język">
 </form>
 <br>
-<c:out value="${lang['${cookie.}']}"/>
 <%--${lang [${cookie.language.value}]}--%>
-<c:set var="language" value="${language}"/>
-<%--${language} <br>--%>
-
-
-<%--<c:out value="${cookie.language.value}" default="cześć"/>--%>
-
 </body>
 </html>
