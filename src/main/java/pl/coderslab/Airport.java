@@ -5,6 +5,12 @@ public class Airport {
     private String code;
     private String timezone;
 
+    public Airport(String name, String code, String timezone) {
+        this.name = name;
+        this.code = code;
+        this.timezone = timezone;
+    }
+
     public String getName() {
         return name;
     }
@@ -27,5 +33,14 @@ public class Airport {
 
     public void setTimezone(String timezone) {
         this.timezone = timezone;
+    }
+
+    @Override
+    public String toString() {
+        return "Airport{" +
+                "name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", timezone='" + timezone + '\'' +
+                '}';
     }
 }
